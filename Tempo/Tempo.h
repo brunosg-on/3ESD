@@ -1,33 +1,33 @@
 
 typedef struct tempo Tempo;
-/*CriaÁ„o de uma unidade de tempo
-    ï Permite definir um perÌodo de tempo em horas, minutos e segundos.
-    ï Ajusta  automaticamente os valores para garantir que estejam no formato correto
+/*Cria√ß√£o de uma unidade de tempo
+    ‚Ä¢ Permite definir um per√≠odo de tempo em horas, minutos e segundos.
+    ‚Ä¢ Ajusta  automaticamente os valores para garantir que estejam no formato correto
 (por exemplo, 70 segundos se tornam 1 minuto e 10 segundos).*/
-Tempo* CriarTempo(float hora, float minuto, float segundo);
-/*ExibiÁ„o de um perÌodo de tempo
-    ï Mostra a unidade de tempo no formato HH:MM:SS.*/
+Tempo* CriarTempo(int hora, int minuto, int segundo);
+/*Exibi√ß√£o de um per√≠odo de tempo
+    ‚Ä¢ Mostra a unidade de tempo no formato HH:MM:SS.*/
 void ExibirTempo(Tempo* tempo);
 
-/*Convers„o para segundos
-    ï Retorna o valor total do perÌodo de tempo convertido para segundos.*/
-float Segundos(Tempo *tempo);
-/*Convers„o de segundos para unidade de tempo
-    ï Recebe um valor em segundos e o converte para o formato HH:MM:SS.*/
-void SegTemp(float segundo);
-/*Soma de perÌodos de tempo
+/*Convers√£o para segundos
+    ‚Ä¢ Retorna o valor total do per√≠odo de tempo convertido para segundos.*/
+int Segundos(Tempo *tempo);
+/*Convers√£o de segundos para unidade de tempo
+    ‚Ä¢ Recebe um valor em segundos e o converte para o formato HH:MM:SS.*/
+void SegTemp(int segundo);
+/*Soma de per√≠odos de tempo
       
-    ï Permite adicionar dois perÌodos e retorna o resultado ajustado corretamente.*/
+    ‚Ä¢ Permite adicionar dois per√≠odos e retorna o resultado ajustado corretamente.*/
 Tempo* SomarTempo(Tempo* tempo1, Tempo* tempo2);
-/*SubtraÁ„o de perÌodos de tempo
-    ï Calcula a diferenÁa entre dois perÌodos, garantindo que o resultado seja
+/*Subtra√ß√£o de per√≠odos de tempo
+    ‚Ä¢ Calcula a diferen√ßa entre dois per√≠odos, garantindo que o resultado seja
 positivo.*/
 Tempo* SubTempo(Tempo* tempo1, Tempo* tempo2);
 /*Tempo* SubtrairTempo(Tempo* tempo1, Tempo* tempo2);
 
-ComparaÁ„o de perÌodos de tempo
+Compara√ß√£o de per√≠odos de tempo
       
-    ï Determina se um perÌodo de tempo È maior, menor ou igual a outro.
-    ï Retorna -1 se o primeiro perÌodo for menor, 0 se forem iguais e 1 se for maior.
+    ‚Ä¢ Determina se um per√≠odo de tempo √© maior, menor ou igual a outro.
+    ‚Ä¢ Retorna -1 se o primeiro per√≠odo for menor, 0 se forem iguais e 1 se for maior.
 int CompararTempo(Tempo* tempo1, Tempo* tempo2);*/
-Tempo* comp(Tempo* tempo1, Tempo* tempo2);
+int CompTempo(Tempo* tempo1, Tempo* tempo2);
